@@ -1,0 +1,19 @@
+{
+  "name": "advent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy-files": "copyfiles -u 1 src/**/*.txt dist/",
+    "build": "tsc && npm run copy-files",
+    "day": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.14",
+    "copyfiles": "^2.4.1"
+  }
+}
